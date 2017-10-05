@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/teachers">Teachers</a></li>
+<li><a href="/students">Students</a></li>
+<li><a href="/subjects">Subjects</a></li>
+</ul>
+<h3>Add Students</h3>
+<p><a href="/students">View Data</a>
+<form action="/students/add" method="post">
+	<p>First Name</p>
+	<input type="text" name="first_name" placeholder="fisrt name"> 
+	<p>Last Name</p>
+	<input type="text" name="last_name" placeholder="last name"> 
+	<p>Email</p>
+	<input type="text" name="email" placeholder="email">
+	<label><%-msg%></label>
+	<p>
+	<input type="submit" value="Add Student">
+	</p>
+</form>
+</body>
+</html>
